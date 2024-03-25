@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculatrice IMC</title>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+
+<body>
+    <header>
+        <img src="./assets/imgs/logo-ri7-long-gradient.webp" alt="">
+    </header>
+    <main>
+        <h1>Indice de masse corporelle</h1>
+        <form action="">
+            <section id="form-container">
+                <h2>Calcul de votre IMC</h2>
+                <p>C'est tout simple, tu prends ton poids en kg, tu divises par le carré de ta taille en mètres et
+                    hop, t'as ton IMC ! Mais attention, on cherche pas à faire des maths de haut niveau ici, un IMC
+                    normal c'est entre 18,5 et 25. Pas la peine de sortir ta calculette, laisse-la tranquille et remplis
+                    juste les cases ci-dessous. <br>Ça ira plus vite, promis !</p>
+                <div class="form-fill">
+                    <label for="name">Nom</label>
+                    <input type="text" id="name" placeholder="Tapez votre nom">
+                </div>
+                <div class="form-fill">
+                    <label for="height">Taille</label>
+                    <input placeholder="Indiquez votre taille en m (1,70)" id="height" type="number">
+                </div>
+                <div class="form-fill">
+                    <label for="weight">Poids</label>
+                    <input placeholder="Indiquez votre poids en kg" id="weight" type="number">
+                </div>
+                <button id="valider" type="button" onclick='sum()'>Valider</button>
+                <p id="result">IMC : </p>
+                <p id="alert"></p>
+            </section>
+        </form>
+    </main>
+    <footer>
+        <p>© Copyright by César Ortiz</p>
+    </footer>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
